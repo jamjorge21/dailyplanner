@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="testrun.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="testrun.js"></script>
+    <title>Scheduling Calendar</title>
+</head>
+<body>
+    <h1 class="h1">Day planner!</h1>
+   <br>
+    <div class='calendar-container'>
+        <div class='calendar'>
+            <div class='date'></div>
+            <div class='planes'>
+                <div class="col col-1">SCHEDULE HERE!</div>
+                
+            </div>
+            <div class="times">
+                <div class="row row-1">5 AM</div>
+                <div class="row row-2">6 AM</div>
+                <div class="row row-3">7 AM</div>
+                <div class="row row-4">8 AM</div>
+                <div class="row row-5">9 AM</div>
+                <div class="row row-6">10 AM</div>
+                <div class="row row-7">11 AM</div>
+                <div class="row row-8">12 PM</div>
+                <div class="row row-9">1 PM</div>
+                <div class="row row-10">2 PM</div>
+                <div class="row row-11">3 PM</div>
+                <div class="row row-12">4 PM</div>
+                <div class="row row-13">5 PM</div>
+                <div class="row row-14">6 PM</div>
+                <div class="row row-15">7 PM</div>
+                <div class="row row-16">8 PM</div>
+                <div class="row row-17">9 PM</div>
+                <div class="row row-18">10 PM</div>
+                <div class="row row-19">11 PM</div>
+                <div class="row row-20">12 AM</div>
+                <div class="row row-21">1 AM</div>
+                <div class="row row-22">2 AM</div>
+                <div class="row row-23">3 AM</div>
+                <div class="row row-24">4 AM</div>
+            </div>
+            <div class="content">
+                <div id="1"></div>
+                <div id="2"></div>
+                <div id="3"></div>
+                <div id="4"></div>
+                <div id="5"></div>
+                <div id="6"></div>
+                <div id="7"></div>
+                <div id="8"></div>
+                <div id="9"></div>
+                <div id="10"></div>
+                <div id="11"></div>
+                <div id="12"></div>
+                <div id="13"></div>
+                <div id="14"></div>
+                <div id="15"></div>
+                <div id="16"></div>
+                <div id="17"></div>
+                <div id="18"></div>
+                <div id="19"></div>
+                <div id="20"></div>
+                <div id="21"></div>
+                <div id="22"></div>
+                <div id="23"></div>
+                <div id="24"></div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal-container">
+        <div class="modal">
+            <span class='modal-container--close'>&times;</span>
+              <h3>Schedule it!</h3>
+              <form class='modal-container--form'>
+                <label for="start-select">Start time</label>
+                <select id='start-select'>
+                    <option value="5 AM">5 AM</option>
+                    <option value="6 AM">6 AM</option>
+                    <option value="7 AM">7 AM</option>
+                    <option value="8 AM">8 AM</option>
+                    <option value="9 AM">9 AM</option>
+                    <option value="10 AM">10 AM</option>
+                    <option value="11 AM">11 AM</option>
+                    <option value="12 PM">12 PM</option>
+                    <option value="1 PM">1 PM</option>
+                    <option value="2 PM">2 PM</option>
+                    <option value="3 PM">3 PM</option>
+                    <option value="4 PM">4 PM</option>
+                    <option value="5 PM">5 PM</option>
+                    <option value="6 PM">6 PM</option>
+                    <option value="7 PM">7 PM</option>
+                    <option value="8 PM">8 PM</option>
+                    <option value="9 PM">9 PM</option>
+                    <option value="10 PM">10 PM</option>
+                    <option value="11 PM">11 PM</option>
+                    <option value="12 AM">12 AM</option>
+                    <option value="1 AM">1 AM</option>
+                    <option value="2 AM">2 AM</option>
+                    <option value="3 AM">3 AM</option>
+                    <option value="4 AM">4 AM</option>
+                </select>
+                <label for="end-select">End time</label>
+                <select id='end-select'>
+                    <option value="5 AM">5 AM</option>
+                    <option value="6 AM">6 AM</option>
+                    <option value="7 AM">7 AM</option>
+                    <option value="8 AM">8 AM</option>
+                    <option value="9 AM">9 AM</option>
+                    <option value="10 AM">10 AM</option>
+                    <option value="11 AM">11 AM</option>
+                    <option value="12 PM">12 PM</option>
+                    <option value="1 PM">1 PM</option>
+                    <option value="2 PM">2 PM</option>
+                    <option value="3 PM">3 PM</option>
+                    <option value="4 PM">4 PM</option>
+                    <option value="5 PM">5 PM</option>
+                    <option value="6 PM">6 PM</option>
+                    <option value="7 PM">7 PM</option>
+                    <option value="8 PM">8 PM</option>
+                    <option value="9 PM">9 PM</option>
+                    <option value="10 PM">10 PM</option>
+                    <option value="11 PM">11 PM</option>
+                    <option value="12 AM">12 AM</option>
+                    <option value="1 AM">1 AM</option>
+                    <option value="2 AM">2 AM</option>
+                    <option value="3 AM">3 AM</option>
+                    <option value="4 AM">4 AM</option>
+                </select>
+                <label for="todo">To Do:</label>
+                <input type="text" id="todo" name="todo">
+                <button type="submit">Submit</button>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
